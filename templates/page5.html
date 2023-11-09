@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/page5.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="/page1">About Project</a></li>
+              <li><a href="/page2">Registration</a></li>
+              <li><a href="/page4">Database</a></li>
+              <li><a href="/page3">Contacts</a></li>
+              <li><a href="/page5">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>Our Developers</h2>
+        <div class="developers-container">
+            <div class="developer">
+                <img src="../static/images/img_5.png" alt="Developer 1">
+                <h3>Zeynep Galymzhankyzy</h3>
+                <p>Project manager and Backend developer</p>
+                <p>The project manager in "Astana Sanaq 2023" project plays a key role in organizing
+                  and managing the population census process in the capital of Kazakhstan.
+                  She is the main coordinator and is responsible for all operational activities of the project.</p>
+            </div>
+
+            <div class="developer">
+                <img src="../static/images/Ildar.jpg" alt="Developer 2">
+                <h3>Ildar Rinatov</h3>
+                <p>Product manager and Backend Developer</p>
+                <p>The product manager plays an important role in determining the characteristics
+                  and functions of the "Astana Sanaq 2023" project. He works closely
+                  with the project manager and the technical team to create a product that meets the needs of the user.</p>
+            </div>
+
+            <div class="developer">
+                <img src="../static/images/Aigerim.png" alt="Developer 3">
+                <h3>Aygerim Karibekova</h3>
+                <p>Process Manager and Frontend Developer</p>
+                <p>The frontend developer is responsible for creating the user interface of the "Astana Sanaq 2023" project.
+                  She transforms design and functional requirements into web pages that users can see and interact with.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

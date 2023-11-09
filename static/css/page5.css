@@ -1,0 +1,120 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../images/img_4.png'); /* Замените путь_к_вашей_фотографии.jpg на фактический путь к вашей фотографии */
+            background-size: cover;
+        }
+
+header {
+    background-color: #333; /* Fixed background color for the navbar */
+    color: #fff; /* Text color for better contrast on dark background */
+    padding: 20px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+li {
+    padding: 15px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for text color change */
+}
+
+a:hover {
+    color: white; /* Change text color on hover (you can adjust this to your preference) */
+}
+
+/* Optional: Add background color on hover for a button-like effect */
+a:hover {
+    background-color: darkslategray;
+    border-radius: 5px;
+}
+
+/* Optional: Style the navbar to have a shadow for a lifted appearance */
+nav {
+    background-color: #333; /* Match the background color of the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+        .main-content {
+            text-align: center;
+            padding: 50px 0; /* Добавляем отступы сверху и снизу, чтобы контент не сливался с изображением */
+        }
+
+        .developers-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Если хотите, чтобы элементы автоматически переносились на новую строку при нехватке места */
+        }
+
+        /* Остальной CSS код остается без изменений */
+
+        .developer {
+          width: 400px; /* Задайте фиксированную ширину для каждого разработчика */
+          text-align: center;
+          margin: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative; /* Устанавливаем позицию для разработчика */
+      }
+
+      .developer::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(255, 255, 255, 0.81); /* Черно-прозрачный фон */
+          z-index: -1;
+          border-radius: 5px; /* Закругляем углы */
+      }
+
+      .developer img {
+          max-width: 200px;
+          max-height: 200px;
+          border-radius: 5%;
+          margin: 10px 0;
+          z-index: 1;
+      }
+
+      .developer h3 {
+          font-size: 24px;
+          margin-bottom: 5px;
+          color: rgb(5, 3, 3); /* Белый текст */
+          z-index: 1;
+      }
+
+      .developer p {
+          font-size: 18px;
+          color: rgba(21, 16, 16, 0.5); /* Белый текст */
+          z-index: 1;
+      }
+
+h2 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    color: white;
+     background-color: rgba(24, 17, 17, 0.5); /* Adjust the alpha (fourth) value for transparency */
+    padding: 15px; /* Add padding for better readability */
+}

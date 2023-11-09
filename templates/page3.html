@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/page3.css') }}">
+    <script src="page3.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="/page1">About Project</a></li>
+              <li><a href="/page2">Registration</a></li>
+              <li><a href="/page4">Database</a></li>
+              <li><a href="/page3">Contacts</a></li>
+              <li><a href="/page5">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="background"></div>
+        <div id="help-content">
+          <h1>Need Help?</h1>
+          <p>If you need assistance or have any questions, feel free to contact us through one of the following methods:</p>
+
+
+          <p>Alternatively, you can use the contact form below:</p>
+
+          <form id="contact-form" action="/submit-contact" method="POST">
+             <label for="name">Your Name:</label>
+             <input type="text" id="name" name="name" required>
+
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required>
+
+             <label for="message">Message:</label>
+             <textarea id="message" name="message" rows="5" required></textarea>
+
+             <button type="submit">Send Message</button>
+          </form>
+
+          <div id="notification" style="display: none;">Сообщение отправлено!</div>
+        </div>
+</body>
+</html>
